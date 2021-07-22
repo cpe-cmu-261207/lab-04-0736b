@@ -6,14 +6,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
-	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<title>TODO LIST</title>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+<body style="background-image: url('./img/bg4.jpg');" class="font-serif text-black text-center bg-white bg-opacity-80">
+	<h1 class="text-6xl font-black pt-20 mb-8">TODO LIST</h1>
+
+	<h2 class="font-sans text-lg text-gray-500 font-thin mb-4">WHAT IS YOUR TODO ?</h2>
+
+	<div class="container max-w-screen-md text-center mx-auto p-6 bg-black bg-opacity-90 m-0">
+		<input id="userInput"  type='text' class="shadow-md font-sans font-thin focus:ring-1 focus:ring-gray-400 transition duration-300 ease-in-out" size="36" placeholder="ENTER LIST">
+		<button id="enter" class=" text-black font-bold px-4 bg-green-600 hover:bg-green-700 transition duration-300 ease-in-out" >+</button>
+	</div>
+
+	<!-- List -->
+	<div id="divList" class="text-center max-w-screen-md mx-auto">
+		<!-- <ul class="text-center mx-auto"></ul> -->
+	</div>
+
 </body>
 
 </html>
